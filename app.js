@@ -1,17 +1,13 @@
-// const add = require('./utils.js')
 
-// const sum = add(7,9)
+const validator = require('validator')
+//import validator from 'validator';
+const getNotes = require('./notes.js')
+const chalk = require('chalk');
 
-// console.log(add(3,2))
+const msg = getNotes()
 
-// console.log(sum)
+console.log(chalk.white.bgRed.bold(msg))
 
-// const getNotes = require('./notes.js')
+console.log(validator.isEmail('andrew@email.com'))
 
-// const letter = getNotes()
-
-// console.log(letter)
-const fs = require('fs');
-
-fs.writeFileSync('notes.txt','This is my new file')
-
+console.log(validator.isURL('https://google.in'))
