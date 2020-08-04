@@ -6,7 +6,7 @@ const chalk = require('chalk');
 
 const msg = getNotes()
 
-console.log(chalk.white.bgRed.bold(msg))
+console.log(chalk.yellow.bgRed.inverse.bold(msg))
 
 console.log(validator.isEmail('andrew@email.com'))
 
