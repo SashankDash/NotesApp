@@ -6,8 +6,12 @@
 
 // console.log(sum)
 
-const getNotes = require('./notes.js')
+// const getNotes = require('./notes.js')
 
-const letter = getNotes()
+// const letter = getNotes()
 
-console.log(letter)
+// console.log(letter)
+const fs = require('fs');
+
+fs.writeFileSync('notes.txt','This is my new file')
+
